@@ -4,11 +4,11 @@ Wishusucess Customer Login By Phone Number Add the Functionality to Login Your C
 # About Wishusucess Customer Mobile No Login
 Wishusucess customer login by Mobile Number or phone number extension allow your Magento 2 store customers to login by their reigsterd mobile number or phone number. This module will also allow you to login via both ( email and number ) at the same field, this extension is capable to handle the field value and access the store with the provided data - Mobile login extention for Magento 2.
 
-“*”Login with mobile phone number or email.
+*Login with mobile phone number or email.
 
-“*”Customer can create account using mobile phone number.
+*Customer can create account using mobile phone number.
 
-“*”Change phone number under customer dashboard.
+*Change phone number under customer dashboard.
 
 # How to Install Wishusucess Customer Login Via Phone Number Module
 
