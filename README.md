@@ -1,6 +1,41 @@
 # Magento-2-Login-Customer-By-Phone-Number
 Wishusucess Customer Login By Phone Number Add the Functionality to Login Your Customer Through Mobile or Phone No.
 
+# About Wishusucess Customer Mobile No Login
+Wishusucess customer login by Mobile Number or phone number extension allow your Magento 2 store customers to login by their reigsterd mobile number or phone number. This module will also allow you to login via both ( email and number ) at the same field, this extension is capable to handle the field value and access the store with the provided data - Mobile login extention for Magento 2.
+
+“*”Login with mobile phone number or email.
+
+“*”Customer can create account using mobile phone number.
+
+“*”Change phone number under customer dashboard.
+
+# How to Install Wishusucess Customer Login Via Phone Number Module
+
+Run the following command in Magento 2 root folder:
+
+php bin/magento setup:upgrade
+
+php bin/magento setup:di:compile
+
+php bin/magento setup:static-content:deploy -f
+
+**Then**
+
+php bin/magento module:enable Wishusucess_SigninPhoneNumber
+
+php bin/magento setup:upgrade
+
+**Clear the caches:**
+
+php bin/magento cache:clean
+
+
+# Need Help ?
+
+Contact Us at our website [contact us form](https://wishusucess.com/)
+
+
 # Similar Posts
 
 [Sorting Products: Magento 2 REST API For Sort By Product on List Page](http://www.wishusucess.com/how-to-sorting-products-using-magento2-rest-api/)
