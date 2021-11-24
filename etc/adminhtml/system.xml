@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Category: Wishusucess Customer Sign in By Phone Number
+ * Developer: Hemant Singh Magento 2x Developer
+ * Website: http://wwww.wishusucess.com
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="wishusucess" translate="label" sortOrder="900">
+            <label>Wishusucess</label>
+        </tab>
+        <section id="wishusucess_signin_phone_number" showInDefault="1">
+            <tab>wishusucess</tab>
+            <label>Sign in With Phone Number</label>
+            <resource>Wishusucess_SigninPhoneNumber::config</resource>
+            <group id="module" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+                <label>Enable Module</label>
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="options" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="20" translate="label">
+                <label>Settings</label>
+                <field id="mode" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Sign in Mode</label>
+                    <source_model>Wishusucess\SigninPhoneNumber\Model\Config\Source\SigninMode</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

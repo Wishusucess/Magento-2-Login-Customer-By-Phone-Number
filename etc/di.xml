@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Category: Wishusucess Customer Sign in By Phone Number
+ * Developer: Hemant Singh Magento 2x Developer
+ * Website: http://wwww.wishusucess.com
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- API Preferences -->
+    <preference for="Wishusucess\SigninPhoneNumber\Api\SigninInterface" type="Wishusucess\SigninPhoneNumber\Model\Handler\Signin"/>
+    <!-- Overrides -->
+    <preference for="Magento\Customer\Api\AccountManagementInterface" type="Wishusucess\SigninPhoneNumber\Model\AccountManagement" />
+    <preference for="Magento\Customer\Block\Form\Login" type="Wishusucess\SigninPhoneNumber\Block\Form\Login"/>
+
+    <type name="Magento\Customer\Model\ResourceModel\Customer">
+        <plugin name="wishusucess_validate_unique_phonenumber" type="Wishusucess\SigninPhoneNumber\Plugin\Model\ResourceModel\Customer\ValidateUniquePhonenumber" sortOrder="10" disabled="false"  />
+    </type>
+</config>
